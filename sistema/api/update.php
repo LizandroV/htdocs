@@ -1,6 +1,7 @@
 <?php
 // Set up the database connection
 //http://localhost/sistema/api/update.php?id=18&nombre=Hola&apellido=Mundo&email=e&telefono=1&detalle=d
+require 'cotynfig.php';
 
 $servername = "localhost";
 $username = "root";
