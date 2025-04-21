@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $post = Post::orderBy('id', 'desc')->get();
+        $post = Post::orderBy('id', 'desc')->paginate(10);
         return view('posts.index', ['posts' => $post]);
     }
 

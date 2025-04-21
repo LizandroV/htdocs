@@ -13,5 +13,8 @@
             "database": "wordpress",
             "username": "root"
         }
+    ],
+    "cSpell.words": [
+        "metodo"
     ]
 }

@@ -3,12 +3,15 @@
 
     <a href="post/create">Nuevo Post</a>
     <br><br>
-    @foreach ($posts as $post)
-        <li>
-            <a href="post/{{ $post->id }}">
-                {{ $post->title }}
-            </a>
-        </li>
-    @endforeach
+    <ul>
+        @foreach ($posts as $post)
+            <li>
+                <a href="post/{{ $post->id }}">
+                    {{ $post->title }}
+                </a>
+            </li>
+        @endforeach
+    </ul>
+    {{ $posts->links() }}
 
 </x-app-layout>

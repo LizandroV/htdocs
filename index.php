@@ -5,11 +5,14 @@ echo "<h1>$title</h1>";
 // Variables
 $name = "Lizandro";
 $age = 27;
-$develover = true;
+$developer = true;
+
+const DNI = 75922175;
+define("DATE","27/2/2025");
 
 // IF ELSE
 echo "<p>Hi my name is, $name, my age is $age</p>";
-if ($develover == true) {
+if ($developer == true) {
     echo "<p>You are a developer</p>";
 } else {
     echo "<p>You are not a developer</p>";
@@ -17,13 +20,20 @@ if ($develover == true) {
 
 // ARRAY - FOREACH
 $languages = array('PHP', 'JS', 'Python');
-echo "<p>My favorite languages are:</p>";
+echo "<p>My favorite languages are:....</p>";
 
 foreach ($languages as $language) {
     echo "<li>$language</li>";
 }
 
+echo DNI;
+echo "<br>";
+echo DATE;
+$usuario = ["nombre" => "Pedro", "edad" => 25];
 
+foreach ($usuario as $clave => $valor) {
+    echo "$clave: $valor <br>";
+}
 ?>
 
 <!DOCTYPE html>
